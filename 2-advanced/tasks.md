@@ -52,7 +52,7 @@
 > [joern]
 > ```
  
-db.erl - In progress
+[db.erl](https://github.com/ArtamonovAlex/Reksoft_tasks/blob/master/2-advanced/db.erl) - Done
 
 ### 2.1 Новая функциональность в базе данных
 
@@ -70,11 +70,11 @@ db.erl - In progress
 > db:batch_read(KeyList, Db) -> [{Key, Element}] | {error, instance} | {error, batch_limit}.
 > ```
 
-db.erl - In progress
+[db.erl](https://github.com/ArtamonovAlex/Reksoft_tasks/blob/master/2-advanced/db.erl) - In progress
 
 ### 2.2 Сделайте так, чтобы база данных работала с JSON объектами, реализованными ранее в п.1.8
 
-db.erl - In progress
+[db.erl](https://github.com/ArtamonovAlex/Reksoft_tasks/blob/master/2-advanced/db.erl) - In progress
 
 ### 2.3 Lambda-вычисления
 
