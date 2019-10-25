@@ -100,7 +100,7 @@
 > и возвращает:
 > [ 5.360220495669696, 10.720440991339393, 12.988650063170537, 18.14700750425752 ]
 
-lambda.erl - In progress
+[lambda.erl](https://github.com/ArtamonovAlex/Reksoft_tasks/blob/master/2-advanced/lambda.erl) - In progress
 
 ### 2.4 Библиотечные функции
 
@@ -112,7 +112,7 @@ lambda.erl - In progress
 >   Синтаксис `my_lists:filtermap` должен совпадать с синтаксисом
 >   `lists:filtermap`
 
-my_lists.erl - In progress
+[my_lists.erl](https://github.com/ArtamonovAlex/Reksoft_tasks/blob/master/2-advanced/my_lists.erl) - In progress
 
 ### 2.5 Ленивые вычисления
 
@@ -143,4 +143,4 @@ my_lists.erl - In progress
 >    - добавить ограничение: минимальная длина подпоследовательности должна быть
 >      K.
 
-lazy.erl - In progress
+[lazy.erl](https://github.com/ArtamonovAlex/Reksoft_tasks/blob/master/2-advanced/lazy.erl) - In progress
