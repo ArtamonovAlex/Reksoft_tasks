@@ -85,6 +85,22 @@
 >   Проверьте вашу функцию на разных операциях (``erlang:'+'``, ``erlang:'xor'``,
 >   ``erlang:'rem'``, ``erlang:'/'`` и собственной фунции, которая возвращает
 >   среднее гармоническое двух чисел ``H = 2/(1/A + 1/B)``).
+
+```erlang
+F = fun Loop([H | T], [H1 | T1], Operation) ->
+		case T ++ T1 of
+			[] ->
+				[Operation(H, H1)];
+			T ->
+				[H | Loop(T, T1, Operation)];
+			T1 -> 
+				[H1 | Loop(T, T1, Operation)];
+			_ ->
+				[Operation(H, H1) | Loop(T, T1, Operation)]
+			end
+		end.
+ ```
+
 > * Напишите lambda-функцию, которая для каждой точки точки из списка ``dotsA``
 >   вычисляет расстояние до всех точек из списка точек ``dotsB`` в пространстве
 >   размерности N.  Напишите функцию, которая читает следующую нотацию:
@@ -100,7 +116,33 @@
 > и возвращает:
 > [ 5.360220495669696, 10.720440991339393, 12.988650063170537, 18.14700750425752 ]
 
-[lambda.erl](https://github.com/ArtamonovAlex/Reksoft_tasks/blob/master/2-advanced/lambda.erl) - In progress
+```erlang
+Func = fun Loop([{dimension, _N}, {dotsA, List1}, {dotsB, List2}]) ->
+	F = fun Loop([H | T], [H1 | T1], Operation) ->
+		case T ++ T1 of
+			[] ->
+				[Operation(H, H1)];
+			T ->
+				[H | Loop(T, T1, Operation)];
+			T1 -> 
+				[H1 | Loop(T, T1, Operation)];
+			_ ->
+				[Operation(H, H1) | Loop(T, T1, Operation)]
+			end
+		end,
+	F2 = fun Loop([H | T]) ->
+		case T of
+			[] ->
+				H*H;
+			_ ->
+				H*H + Loop(T)
+		end
+	end,
+	[math:sqrt(F2(F(tuple_to_list(A), tuple_to_list(B), fun(X, Y) -> X - Y end))) || A <- List1, B <- List2]
+end.
+```
+
+[lambda.erl](https://github.com/ArtamonovAlex/Reksoft_tasks/blob/master/2-advanced/lambda.erl) - Done
 
 ### 2.4 Библиотечные функции
 
