@@ -70,7 +70,7 @@
 > db:batch_read(KeyList, Db) -> [{Key, Element}] | {error, instance} | {error, batch_limit}.
 > ```
 
-[db.erl](https://github.com/ArtamonovAlex/Reksoft_tasks/blob/master/2-advanced/db.erl) - In progress
+[db.erl](https://github.com/ArtamonovAlex/Reksoft_tasks/blob/master/2-advanced/db.erl) - Done
 
 ### 2.2 Сделайте так, чтобы база данных работала с JSON объектами, реализованными ранее в п.1.8
 
