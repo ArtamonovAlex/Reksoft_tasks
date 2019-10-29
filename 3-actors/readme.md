@@ -84,4 +84,4 @@ db.erl - In progress
 >    ограничения?
 >  - скомбинируйте решения и реализуйте простой map/reduce.
 
-paral.erl - Done
+[paral.erl] (https://github.com/ArtamonovAlex/Reksoft_tasks/blob/master/3-actors/paral.erl) - Done
