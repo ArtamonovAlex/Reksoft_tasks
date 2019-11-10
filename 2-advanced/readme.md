@@ -185,4 +185,4 @@ end.
 >    - добавить ограничение: минимальная длина подпоследовательности должна быть
 >      K.
 
-[lazy.erl](https://github.com/ArtamonovAlex/Reksoft_tasks/blob/master/2-advanced/lazy.erl) - In progress
+[lazy.erl](https://github.com/ArtamonovAlex/Reksoft_tasks/blob/master/2-advanced/lazy.erl) - Done
