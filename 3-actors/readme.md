@@ -48,7 +48,7 @@
 >     proc(NewState).
 > ```
 
-db.erl - In progress
+[db.erl] - Done
 
 ### 3.2. Parallelisation
 
