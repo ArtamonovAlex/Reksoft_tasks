@@ -69,7 +69,7 @@
 > в каждом из которых ждать действия от пользователя и завершать 
 > операцию по таймеру.
 
-atm.erl - In Progress
+[atm.erl](atm.erl) - Done
 
 #### 4.3 Open Telecom Bank (application + supervisor)
 
